@@ -1,0 +1,25 @@
+[0m[[0minfo[0m] [0mPackaging /Users/marcus/workspaceScala/nativesound/target/nativesound-0.1.apk[0m
+[0m[[0mdebug[0m] [0mUsing keystore: /Users/marcus/.android/debug.keystore[0m
+[0m[[0mdebug[0m] [0mPackaging nativesound-0.1.apk[0m
+[0m[[0mdebug[0m] [0m/Users/marcus/workspaceScala/nativesound/target/resources.apk:[0m
+[0m[[0mdebug[0m] [0m=> res/color/button_label.xml[0m
+[0m[[0mdebug[0m] [0m=> res/drawable/btn_green.xml[0m
+[0m[[0mdebug[0m] [0m=> res/drawable/label_background.9.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable/stripes_bg.xml[0m
+[0m[[0mdebug[0m] [0m=> res/layout/main.xml[0m
+[0m[[0mdebug[0m] [0m=> AndroidManifest.xml[0m
+[0m[[0mdebug[0m] [0m=> resources.arsc[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-hdpi/btn_green_normal.9.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-hdpi/btn_green_normal_disable.9.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-hdpi/btn_green_pressed.9.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-hdpi/btn_green_selected.9.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-hdpi/playback_background.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-hdpi/stripes.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-ldpi/btn_default_pressed.9.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-ldpi/btn_default_selected.9.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-ldpi/btn_green_normal.9.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-ldpi/btn_green_normal_disable.9.png[0m
+[0m[[0mdebug[0m] [0m=> res/drawable-ldpi/btn_green_selected.9.png[0m
+[0m[[0mdebug[0m] [0m/Users/marcus/workspaceScala/nativesound/target/classes.dex => classes.dex[0m
+[0m[[0mdebug[0m] [0m/Users/marcus/workspaceScala/nativesound/target/classes.min.jar:[0m
+[0m[[0mdebug[0m] [0m=> library.properties[0m

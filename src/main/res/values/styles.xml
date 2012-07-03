@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="button_huge"> <!-- Default system background -->
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@color/button_label</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_huge</item>
+        <item name="android:shadowColor">@color/text_shadow</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+    </style>
+
+
+    <style name="button_huge_green" parent="button_huge">
+        <item name="android:background">@drawable/btn_green</item>
+    </style>
+
+</resources>

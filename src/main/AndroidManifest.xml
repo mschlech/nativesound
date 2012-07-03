@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.entscheidungsbaum.nativesound">
+
+    <application
+            android:icon="@drawable/android:star_big_on"
+            android:label="@string/app_name"
+            android:debuggable="true">
+
+        <!-- Permissions used by this bundle -->
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <uses-permission android:name="android.permission.VIBRATE"/>
+        <uses-permission android:name="android.permission.WAKE_LOCK"/>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+        <activity android:label="@string/app_name" android:name=".SoundMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".RecordActivity"
+                  android:configChanges="orientation|keyboardHidden"
+                />
+    </application>
+
+    <uses-sdk android:minSdkVersion="10"/>
+</manifest>

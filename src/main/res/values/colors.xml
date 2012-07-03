@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="bb_black_80">#cc000000</color>
+    <color name="bb_gray_80">#cc888888</color>
+    <color name="bb_white_69">#b2ffffff</color>
+
+
+    <color name="text_shadow">@color/bb_black_80</color>
+
+    <color name="main_menu_label">@android:color/white</color>
+    <color name="main_player_label">@color/bb_gray_80</color>
+    <color name="main_background">#0f0e0d</color>
+
+    <color name="button_label_normal">@android:color/white</color>
+    <color name="button_label_normal_disable">@color/bb_gray_80</color>
+    <color name="button_label_pressed">@color/bb_white_69</color>
+    <color name="button_label_selected">@android:color/white</color>
+
+
+</resources>

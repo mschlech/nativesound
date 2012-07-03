@@ -1,0 +1,4 @@
+[0m[[0mdebug[0m] [0m/opt/android-sdk-macosx/platform-tools/adb -d install -r  /Users/marcus/workspaceScala/nativesound/target/nativesound-0.1.apk[0m
+[0m[[0minfo[0m] [0m585 KB/s (524966 bytes in 0.875s)[0m
+[0m[[0minfo[0m] [0m	pkg: /data/local/tmp/nativesound-0.1.apk[0m
+[0m[[0minfo[0m] [0mSuccess[0m
