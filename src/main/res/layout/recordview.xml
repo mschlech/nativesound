@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ultrasound="http://schemas.android.com/apk/res/com.entscheidungsbaum.nativesound"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+    <RelativeLayout android:id="@+id/record_background"
+                    android:layout_width="fill_parent"
+                    android:layout_height="330dp"
+                    android:background="@android:color/background_dark"
+                    android:gravity="top|center_vertical"
+            >
+        <!-- 0. Pseudo-spectral analysis ui -->
+        <com.entscheidungsbaum.nativesound.ui.AudioSpectralView android:id="@+id/record_spectral_view"
+                                         android:layout_width="288dp"
+                                         android:layout_height="194dp"
+                                         android:layout_alignParentTop="true"
+                                         android:layout_alignParentLeft="true"
+                                         android:layout_marginTop="35dp"
+                                         android:layout_marginLeft="16dp"
+                                         android:background="@android:color/black"
+                                         ultrasound:numberOfBars="9"
+                                         ultrasound:barDrawable="@color/deepOrange"
+                                         ultrasound:gridColor="@color/whiteOrange"
+                                         ultrasound:gridSpacing="4dp"
+                />
+
+        <!-- 1. Shadow overlay -->
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/inner_shadow"
+                android:scaleType="fitXY"
+                />
+
+        <!-- 2. Main ui content -->
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+            <!-- Addressee field -->
+            <TextView android:id="@+id/record_addressee"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentLeft="true"
+                      android:layout_marginTop="5dp"
+                      android:gravity="center"
+                      android:text=" bla "
+                      android:textColor="@color/textColor"
+                      android:textStyle="bold"
+                      android:textSize="@dimen/text_larger"
+                      android:shadowColor="@color/text_shadow"
+                      android:shadowRadius="1"
+                      android:shadowDx="0"
+                      android:shadowDy="-1"
+                    />
+
+
+            <!-- Player ui -->
+            <ViewAnimator android:id="@+id/record_player_flipper"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentBottom="true"
+                          android:layout_marginBottom="2dp"
+                          android:inAnimation="@anim/fade_in"
+                          android:outAnimation="@anim/fade_out"
+                    >
+                <!-- Player itself -->
+                <com.entscheidungsbaum.nativesound.ui.UltraSoundPlayerView
+                        android:id="@+id/record_player"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        ultrasound:showDisclosure="false"
+                        />
+
+                <!-- Progress -->
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical"
+                        android:padding="3dp"
+                        >
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            >
+                        <!-- Progress Pie -->
+                        <RelativeLayout
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                >
+                            <ImageView
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:src="@drawable/pie_shadow"
+                                    />
+
+                            <com.entscheidungsbaum.nativesound.ui.PieProgressView android:id="@+id/record_pie_progress"
+                                                                android:layout_width="51dp"
+                                                                android:layout_height="51dp"
+                                                                android:layout_centerInParent="true"
+                                                                ultrasound:pieColor="@android:color/white"
+                                    />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                >
+                            <!-- Author -->
+                            <TextView android:id="@+id/record_author"
+                                      android:layout_width="fill_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginTop="2dp"
+                                      android:textSize="@dimen/player_origin"
+                                      android:textStyle="bold"
+                                      android:text="bla 1"
+                                      android:textColor="@color/whiteOrange"
+                                      android:ellipsize="end"
+                                      android:lines="1"
+                                      android:singleLine="true"
+                                    />
+
+                            <!-- Title -->
+                            <TextView android:id="@+id/record_title"
+                                      android:layout_width="fill_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginTop="2dp"
+                                      android:textSize="@dimen/player_origin"
+                                      android:textStyle="bold"
+                                      android:textColor="@android:color/background_light"
+                                      android:ellipsize="end"
+                                      android:lines="1"
+                                      android:singleLine="true"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Remaining -->
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            >
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginRight="10dp"
+                                android:text="RecordRemaining"
+                                android:textSize="@dimen/player_origin"
+                                android:textStyle="bold"
+                                android:textColor="@color/bb_white_69"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:singleLine="true"
+                                />
+
+                        <TextView android:id="@+id/record_remaining"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginRight="8dp"
+                                  android:text="00:00"
+                                  android:textSize="@dimen/player_origin"
+                                  android:textStyle="bold"
+                                  android:textColor="@android:color/white"
+                                  android:ellipsize="end"
+                                  android:lines="1"
+                                  android:singleLine="true"
+                                />
+                    </LinearLayout>
+                </LinearLayout>
+            </ViewAnimator>
+        </RelativeLayout>
+
+        <!-- 3. Disabled overlay -->
+        <LinearLayout android:id="@+id/record_overlay"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:gravity="center"
+                      android:clickable="true"
+                      android:visibility="gone"
+                      android:background="@android:color/black"
+                >
+            <TextView android:id="@+id/record_countdown"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/text_large"
+                      android:textStyle="bold"
+                      android:background="@android:color/transparent"
+                    />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:stretchColumns="0,1"
+            >
+        <TableRow
+                android:layout_height="wrap_content"
+                >
+            <!-- Record button -->
+            <com.entscheidungsbaum.nativesound.ui.RecordButton android:id="@+id/record_button"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_margin="10dp"
+                                             android:layout_span="2"
+                                             ultrasound:textInitial="record"
+                                             android:textOn="pause"
+                                             android:textOff="resume"
+                                             ultrasound:backgroundInitial="@drawable/button_red"
+                                             ultrasound:backgroundOn="@drawable/button_orange"
+                                             ultrasound:backgroundOff="@drawable/button_red"
+                                             style="@style/button_huge"
+                    />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content"
+                >
+            <!-- Reset button -->
+            <Button android:id="@+id/record_restart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Restart"
+                    style="@style/button_large_red"
+                    />
+
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -8,6 +8,8 @@
 
 
     <color name="text_shadow">@color/bb_black_80</color>
+    <color name="textColor">#ffccf70b</color>
+
 
     <color name="main_menu_label">@android:color/white</color>
     <color name="main_player_label">@color/bb_gray_80</color>
@@ -18,5 +20,8 @@
     <color name="button_label_pressed">@color/bb_white_69</color>
     <color name="button_label_selected">@android:color/white</color>
 
+
+    <color name="whiteOrange">#fff76826</color>
+    <color name="deepOrange">#fff72602</color>
 
 </resources>

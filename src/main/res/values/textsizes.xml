@@ -6,4 +6,7 @@
     <dimen name="text_larger">17sp</dimen>
     <dimen name="text_huge">20sp</dimen>
 
+
+    <dimen name="player_origin">@dimen/text_small</dimen>
+
 </resources>

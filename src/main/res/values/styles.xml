@@ -14,8 +14,19 @@
     </style>
 
 
-    <style name="button_huge_green" parent="button_huge">
-        <item name="android:background">@drawable/btn_green</item>
+    <style name="button_large" parent="button_huge"> <!-- Default system background -->
+        <item name="android:textSize">@dimen/text_large</item>
     </style>
+
+
+    <style name="button_huge_green" parent="button_huge">
+        <item name="android:background">@drawable/button_green</item>
+    </style>
+
+
+    <style name="button_large_red" parent="button_large">
+        <item name="android:background">@drawable/button_red</item>
+    </style>
+
 
 </resources>

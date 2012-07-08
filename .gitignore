@@ -12,5 +12,24 @@
 bin/
 gen/
 
+#c / ndk relevant
+jni/ogg/doc
+jni/ogg/win32
+jni/ogg/macosx
+
+jni/flag/doc
+jni/flag/test
+jni/flag/build
+jni/flag/examples
+jni/flag/man
+jni/flag/test
+
+project/project.target.config-classes
+
 # Local configuration file (sdk path, etc)
 local.properties
+
+.idea
+.idea_modules
+
+target/
