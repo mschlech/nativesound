@@ -4,10 +4,10 @@ import java.nio.ByteBuffer;
 
 /**
  * This is *not* a full JNI wrapper for the FLAC codec, but merely exports
- * the minimum of functions necessary for the purposes of the Audioboo client.
+ * the minimum of functions necessary for the purposes of the native sound client.
  *
  * Note that we're not using ByteBuffer here as we do in com.entscheidungsbaum.nativesound.jni.AudioStreamEncoder;
- * this is because AudioTrack (see FLACPlayer) doesn't support ByteBuffer.
+ * this is because AudioTrack (see NativeSoundPlayer) doesn't support ByteBuffer.
  **/
 public class AudioStreamDecoder
 {
