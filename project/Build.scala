@@ -25,15 +25,16 @@ object General {
       AndroidMarketPublish.settings ++ Seq(
       keyalias in Android := "change-me",
       libraryDependencies ++= Seq("org.specs2" %% "specs2" % "1.9" % "test")
-   )
+    )
 }
 
 object AndroidBuild extends Build {
   lazy val main = Project(
     "NativeSound",
     file("."),
-    settings = General.fullAndroidSettings
+    settings = General.fullAndroidSettings ++ AndroidNdk.settings ++ TypedResources.settings
   )
+
 
   lazy val tests = Project(
     "tests",
