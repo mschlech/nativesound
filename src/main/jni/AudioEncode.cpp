@@ -381,6 +381,9 @@ public:
 
 
 
+  /**
+  *    called from the java native implementation class
+  */
   float getMaxAmplitude()
   {
     float result = m_max_amplitude;
