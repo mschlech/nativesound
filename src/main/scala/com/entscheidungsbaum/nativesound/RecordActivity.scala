@@ -20,4 +20,10 @@ class RecordActivity extends Activity{
   }
 
 
+  override def onResume() = {
+    super.onResume()
+
+
+  }
+
 }
