@@ -6,9 +6,9 @@
         >
 
     <TextView
-              android:id="@+id/textview"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"/>
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     <!-- Top half -->
     <RelativeLayout
@@ -28,13 +28,13 @@
             <!-- inspiration from jfinkhaeuser -->
 
             <!--<com.entscheidungsbaum.widget.Flow-->
-                    <!--android:id="@+id/main_menu_flow"-->
-                    <!--android:layout_width="fill_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:unselectedAlpha="0.8"-->
-                    <!--android:spacing="-10dp"-->
-                    <!--android:fadingEdge="none"-->
-                    <!--/>-->
+            <!--android:id="@+id/main_menu_flow"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:unselectedAlpha="0.8"-->
+            <!--android:spacing="-10dp"-->
+            <!--android:fadingEdge="none"-->
+            <!--/>-->
             <TextView
                     android:id="@+id/main_menu_label"
                     android:layout_width="wrap_content"
@@ -77,16 +77,15 @@
                     />
 
             <!--<com.entscheidungsbaum.androidnativesound.widget.PlayerView-->
-                    <!--android:id="@+id/main_boos_player"-->
-                    <!--android:layout_width="fill_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginTop="10dp"-->
-                    <!--android:layout_marginLeft="17dp"-->
-                    <!--android:layout_marginRight="17dp"-->
-                    <!--android:layout_alignParentBottom="true"-->
-                    <!--/>-->
+            <!--android:id="@+id/main_boos_player"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="17dp"-->
+            <!--android:layout_marginRight="17dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--/>-->
         </LinearLayout>
-
         <!-- Record -->
         <Button android:id="@+id/main_record"
                 android:layout_width="fill_parent"
@@ -94,5 +93,12 @@
                 android:layout_margin="10dp"
                 android:text="@string/main_record"
                 />
-    </LinearLayout>
+        <Button android:id="@+id/main_stop_record"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/main_stop_record"
+                />
+        </LinearLayout>
+
 </RelativeLayout>
